@@ -1,0 +1,13 @@
+<% if user_signed_in? %>
+
+<h2>Bienvenido al sistema </h2>
+
+<% else %>
+<h1>Ejemplo en Ruby on Rails</h1>
+<p>Hola mundo, bienvenido
+<%= link_to "Enalce a Google", "http://www.google.com", :class=> "btn btn-primary" %>
+<%= link_to "Registrarse", new_user_registration_path, :class=> "btn btn-success btn-lg" %>
+</p>
+
+
+<% end %>
